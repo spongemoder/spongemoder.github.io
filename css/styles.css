@@ -41,6 +41,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.title a {
+    text-decoration: none;
+    color: white;
+}
+
 .navbar-links ul {
     margin: 0;
     padding: 0;
