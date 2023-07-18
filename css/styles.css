@@ -10,12 +10,6 @@
     src: url('../fonts/terminal-grotesque.ttf')
 }
 
-@font-face {
-    font-family: 'texgyreheroscn';
-    font-weight: 100 400;
-    src: url('../fonts/texgyreheroscn-regular.otf')
-}
-
 * {
     box-sizing: border-box;
 }
