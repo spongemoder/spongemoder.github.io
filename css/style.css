@@ -40,15 +40,16 @@
 .dog {
     position: fixed;
     padding-top: 5px;
-    padding-left: 250px;
-    width: 400px;
-    height: 400px;
+    padding-left: 200px;
+    padding-right: 30%;
+    width: 300px;
+    height: 300px;
 }
 
 .banner-area h2 {
     font-family: 'terminal grotesque open';
     font-weight: 100;
-    font-size: 100px;
+    font-size: 70px;
     color: white;
     text-align: center;
     padding-top: 100px;
