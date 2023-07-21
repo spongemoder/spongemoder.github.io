@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Terminal Grotesque Open';
+    font-weight: 1 1000;
+    src: url("../resources/terminal-grotesque_open.otf");
+}
+
+@font-face {
+    font-family: 'Terminal Grotesque';
+    font-weight: 1 1000;
+    src: url("../resources/terminal-grotesque.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    font-family: 'Terminal Grotesque Open';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+.title {
+    font-size: 1.5rem;
+    background-image: url("../resources/dogdrawing.svg");
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 5px;
+    padding: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.navbar-links li .blog-link:hover {
+    background-image: url("stroke1.svg");
+    background-clip: padding-box;
+    background-size: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar-links li .art-link:hover {
+    background-image: url("stroke2.svg");
+    background-clip: padding-box;
+    background-size: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.navbar-links li .about-link:hover {
+    background-image: url("stroke3.svg");
+    background-clip: padding-box;
+    background-size: 3rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
