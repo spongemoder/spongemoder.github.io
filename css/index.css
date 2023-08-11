@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 200vh;
+    background-image: url("../resources/village.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.dog {
+    position: absolute;
+    padding-top: 2rem;
+    height: 100%;
+}
