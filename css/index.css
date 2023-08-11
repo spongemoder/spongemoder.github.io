@@ -10,7 +10,7 @@
     right: 0px;
     max-width: 100%;
     height: 200vh;
-    background-image: url("../resources/village.png"), url("..resources/dogdrwaing.svg");
+    background-image: url("../resources/village.png");
     background-position: center;
     background-size: cover;
     position: relative;
