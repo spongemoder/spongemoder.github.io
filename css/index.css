@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'terminal grotesque open';
+    font-weight: 100 400;
+    src: url('../resources/terminal-grotesque_open.otf')
+}
+
+@font-face {
+    font-family: 'terminal grotesque closed';
+    font-weight: 100 400;
+    src: url('../resources/terminal-grotesque.ttf')
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +26,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    z-index: 0;
 }
 
 .dog {
@@ -21,4 +34,90 @@
     position: absolute;
     height: 100%;
     max-width: 100vw;
+    z-index: -1;
+}
+
+.recent-posts {
+    z-index: 1;
+    padding: 1rem;
+    color: white;
+    font-family: 'terminal grotesque open';
+    font-size: 3rem;
+}
+
+.recent-posts li {
+    list-style: none;
+}
+
+.recent-posts li a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.recent-posts li a:hover {
+    font-family: 'terminal grotesque closed';
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.landing-title {
+    font-family: 'terminal grotesque open';
+    color:white;
+    font-size: 4rem;
+    text-align: center;
+    position: absolute; 
+    left: 1rem;
+    bottom: 1rem;
+}
+
+.landing-navbar {
+    font-family: 'terminal grotesque open';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    position:absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li .blog:hover {
+    background-image: url("../resources/stroke1.svg");
+    background-clip: padding-box;
+    background-size: 4rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.navbar-links li .art:hover {
+    background-image: url("../resources/stroke2.svg");
+    background-clip: padding-box;
+    background-size: 4rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.navbar-links li .about:hover {
+    background-image: url("../resources/stroke3.svg");
+    background-clip: padding-box;
+    background-size: 6rem;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
