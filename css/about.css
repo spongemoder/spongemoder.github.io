@@ -30,6 +30,8 @@ body h1{
     font-size: 170px;
     letter-spacing : -22.42px;
     color: #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
 }
 
 body p {
