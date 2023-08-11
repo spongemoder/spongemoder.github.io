@@ -8,9 +8,9 @@
     top: 0px;
     left: 0px;
     right: 0px;
-    width: 100%;
+    max-width: 100%;
     height: 200vh;
-    background-image: url("../resources/village.png");
+    background-image: url("../resources/village.png"), url("..resources/dogdrwaing.svg");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -20,4 +20,5 @@
     position: absolute;
     padding-top: 2rem;
     height: 100%;
+    max-width: 100%;
 }
