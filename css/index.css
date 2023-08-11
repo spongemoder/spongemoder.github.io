@@ -86,10 +86,11 @@
 }
 
 .navbar-links ul {
-    display: flex;
+    padding-bottom: 1rem
 }
 
 .navbar-links li {
+    padding-bottom: 1rem;
     list-style: none;
 }
 
@@ -97,7 +98,7 @@
     text-decoration: none;
     font-size: 2rem;
     color: #ffffff;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .navbar-links li .blog-link:hover {
