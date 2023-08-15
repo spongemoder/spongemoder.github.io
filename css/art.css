@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Acumin Variable Concept';
+    font-weight: 1 1000;
+    src: url('../resources/Acumin-Variable-Concept.ttf')
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +12,53 @@
 
 body {
     background-color: rgb(0,0,0);
+}
+
+h1{
+    font-family : 'Acumin Variable Concept';
+    font-weight: 200;
+    font-stretch: ultra-expanded;
+    font-size: 3.7rem;
+    letter-spacing : -0.5rem; 
+    color: #FFFFFF;
+    margin: 5px;
+    padding: 5px;
+}
+
+gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (orientation: portrait) {
+    gallery {
+        flex-direction: column;
+    }
+}
+
+@media (orientation: landscape) {
+    gallery {
+        flex-direction: row;
+    }
+}
+
+img {
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    max-width: 80%;
+    max-height: 500px;
+}
+
+p {
+    font-family : 'Acumin Variable Concept';
+    font-weight: 100;
+    font-stretch: ultra-expanded;
+    font-size: 2rem;
+    letter-spacing : -0.2rem; 
+    color: #FFFFFF;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px;
+
 }
