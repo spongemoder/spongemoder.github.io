@@ -27,10 +27,10 @@ body h1{
     font-family : 'Acumin Variable Concept';
     font-weight: 150;
     font-stretch: ultra-expanded;
-    font-size: 170px;
-    letter-spacing : -22.42px;
+    font-size: 8rem;
+    letter-spacing : -1rem;
     color: #FFFFFF;
-    margin: 0px auto;
+    margin: 0;
     width: 100%;
 }
 
