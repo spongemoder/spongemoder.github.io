@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Terminal Grotesque Open';
     font-weight: 1 1000;
-    src: url("../resources/terminal-grotesque_open.otf");
+    src: url("../fonts/terminal-grotesque_open.otf");
 }
 
 @font-face {
     font-family: 'Terminal Grotesque';
     font-weight: 1 1000;
-    src: url("../resources/terminal-grotesque.ttf");
+    src: url("../fonts/terminal-grotesque.ttf");
 }
 
 *{
