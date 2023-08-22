@@ -1,27 +1,19 @@
 @font-face {
     font-family: 'Terminal Grotesque Open';
     font-weight: 1 1000;
-    src: url("../resources/terminal-grotesque_open.otf");
+    src: url("../fonts/terminal-grotesque_open.otf");
 }
 
 @font-face {
     font-family: 'Terminal Grotesque';
     font-weight: 1 1000;
-    src: url("../resources/terminal-grotesque.ttf");
+    src: url("../fonts/terminal-grotesque.ttf");
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.navbar {
-    font-family: 'Terminal Grotesque Open';
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
 }
 
 .title {
@@ -39,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #000000;
 }
 
 .navbar a {
@@ -84,3 +77,10 @@
     background-repeat: no-repeat;
 }
 
+.navbar-links li .archive-link:hover {
+    background-image: url("../resources/stroke1.svg");
+    background-clip: padding-box;
+    background-size: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

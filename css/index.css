@@ -1,88 +1,75 @@
 @font-face {
-    font-family: 'terminal grotesque open';
-    font-weight: 100 400;
-    src: url('../resources/terminal-grotesque_open.otf')
-}
-
-@font-face {
-    font-family: 'terminal grotesque closed';
-    font-weight: 100 400;
-    src: url('../resources/terminal-grotesque.ttf')
+    font-family: 'Acumin Variable Concept';
+    font-weight: 1 1000;
+    src: url('../fonts/Acumin-Variable-Concept.ttf')
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
-.bg {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    max-width: 100%;
-    height: 200vh;
-    background-image: url("../resources/village.png");
-    background-position: center;
-    background-size: cover;
+
+
+.banner-section {
     position: relative;
-    z-index: 0;
+    height: 50vh;
+    background-image: url("../images/hires/home_bg_0.png"), url("../images/lowres/home_bg_0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
 }
 
-.dog {
-    padding: 5rem;
+.banner-section h1 {
+    text-align: center;
     position: absolute;
-    height: 100%;
-    max-width: 100vw;
-    z-index: -1;
+    bottom: 25%;
+    padding: 10rem;
+    padding-bottom: 0;
+    font-family : 'Acumin Variable Concept';
+    font-weight: 200;
+    font-size: 8rem;
+    letter-spacing: -0.8rem;
+    color: #FFFFFF;
+    margin: 0;
+    width: 100%;
+    transform: scaleX(1.5);
 }
 
-.recent-posts {
-    z-index: 1;
-    padding: 4rem;
-    color: white;
-    font-family: 'terminal grotesque open';
-    font-size: 3rem;
-}
-
-.recent-posts li {
-    list-style: none;
-}
-
-.recent-posts li a {
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-}
-
-.recent-posts li a:hover {
-    font-family: 'terminal grotesque closed';
-    font-size: 2rem;
-    color: white;
-    text-decoration: none;
-}
-
-.nav-holder {
+.banner-section h2 {
     position: absolute;
-    bottom: 0;
+    text-align: center;
+    bottom: 10%;
+    font-family : 'Acumin Variable Concept';
+    font-weight: 125;
+    font-size: 1.5rem;
+    letter-spacing : -0.08rem;
+    color: #EFEFEF;
+    margin: 0;
+    width: 100%;
+    transform: scaleX(1.5);
 }
 
-.navbar {
-    width: 100vw;
-    font-family: 'Terminal Grotesque Open';
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.nav-section {
+    height: 50vh;
+    width: 50vw;
+    position: absolute;
+    background-image: url("../images/hires/home_bg_1.png"), url("../images/lowres/home_bg_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-.title {
-    font-size: 3rem;
-    padding: 1rem;
-}
-
-.navbar a {
+.navbar-links a {
     text-decoration: none;
-    color: #ffffff;
+    font-family : Acumin Variable Concept;
+    font-weight: 500;
+    font-size : 50px;
+    letter-spacing : -0.61px;
+    color: #FFFFFF;
 }
 
 .navbar-links li {
@@ -90,33 +77,181 @@
     list-style: none;
 }
 
-.navbar-links li a{
+.navbar-links .art {
+    color: #3535FF;
+}
+
+.navbar-links .archive {
+    color: #E9004F;
+}
+
+.navbar-links .about {
+    color: #E2FF1F;
+}
+
+.navbar-links .blog {
+    color: #00BF35;
+}
+
+.navbar-links li a:hover {
+    color: #FFFFFF;
+}
+.recent-section {
+    height: 50vh;
+    left: 50%;
+    width: 50%;
+    position: absolute;
+    background-image: url("../images/hires/home_bg_2.png"), url("../images/lowres/home_bg_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 20%;
+}
+
+.recent-section h1 {
+    margin: 0;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    font-family : Acumin Variable Concept;
+    font-weight: 500;
+    font-size : 68px;
+    letter-spacing : -0.61px;
+    color : #FFFFFF;
+    transform: scaleY(0.9);
+}
+
+.recent-section h2 {
+    margin: 0;
+    top: 20%;
+    left: 5%;
+    position: absolute;
+    font-family : Acumin Variable Concept;
+    font-weight: 500;
+    font-size : 68px;
+    letter-spacing : -0.61px;
+    color : #FFFFFF;
+    transform: scaleY(0.9);
+}
+
+.recent-section .img-holder {
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    width: 300px;
+    height: 300px;
+    background-image: url(../images/lowres/archive.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    animation:spin 24s linear infinite;
+}
+
+.recent-section a {
     text-decoration: none;
-    font-size: 2rem;
-    color: #ffffff;
-    padding: 1rem;
+    color: #FFFFFF;
 }
 
-.navbar-links li .blog-link:hover {
-    background-image: url("../resources/stroke1.svg");
-    background-clip: padding-box;
-    background-size: 4rem;
-    background-position: center center;
-    background-repeat: no-repeat;
+@keyframes spin {
+    100% {
+        transform:rotate(360deg);
+    }
 }
 
-.navbar-links li .art-link:hover {
-    background-image: url("../resources/stroke2.svg");
-    background-clip: padding-box;
-    background-size: 4rem;
-    background-position: center center;
-    background-repeat: no-repeat;
+@media (min-width: 623px) {
+    .navbar-links .art {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        color: #3535FF;
+    }
+
+    .navbar-links .archive {
+        position: absolute;
+        top: 33%;
+        left: 25%;
+        color: #E9004F;
+    }
+
+    .navbar-links .about {
+        position: absolute;
+        top: 50%;
+        right: 25%;
+        color: #E2FF1F;
+    }
+
+    .navbar-links .blog {
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+        color: #00BF35;
+    }
+
 }
 
-.navbar-links li .about-link:hover {
-    background-image: url("../resources/stroke3.svg");
-    background-clip: padding-box;
-    background-size: 6rem;
-    background-position: center center;
-    background-repeat: no-repeat;
+@media (max-width: 1868px) {
+    .recent-section .img-holder {
+        width: 200px;
+        height: 200px;
+    }
 }
+
+@media (max-width: 1268px) {
+    .banner-section h1 {
+        font-size: 6rem;
+        letter-spacing: -0.6rem;
+    }
+    
+    .banner-section h2 {
+        font-size: 1rem;
+        letter-spacing: -0.06rem;
+        font-weight: 150;
+    }
+
+    .recent-section h1 {
+        font-size : 52px;
+        letter-spacing: -0.52px;
+    }
+    
+    .recent-section h2 {
+        font-size : 52px;
+        letter-spacing: -0.52px;
+    }
+    
+}
+
+@media (max-width: 968px) {
+    .banner-section h1 {
+        font-size: 4rem;
+        letter-spacing: -0.4rem;
+    }
+    
+    .banner-section h2 {
+        font-size: 0.8rem;
+        letter-spacing: -0.04rem;
+        font-weight: 175;
+    }
+    
+    .recent-section .img-holder {
+        left: center;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 623px) {
+    .banner-section h1 {
+        text-align: left;
+        right: 5rem;
+    }
+    .recent-section h1 {
+        font-size: 28px;
+    }
+    
+    .recent-section h2 {
+        font-size: 28px;
+    }
+    .recent-section .img-holder {
+        width: 150px;
+        height: 150px;
+    }
+}
+
