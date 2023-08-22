@@ -55,7 +55,7 @@
 
 .nav-section {
     height: 50vh;
-    width: 50vw;
+    width: 60vw;
     position: absolute;
     background-image: url("../images/hires/home_bg_1.png"), url("../images/lowres/home_bg_1.png");
     background-repeat: no-repeat;
@@ -98,8 +98,8 @@
 }
 .recent-section {
     height: 50vh;
-    left: 50%;
-    width: 50%;
+    left: 60%;
+    width: 40%;
     position: absolute;
     background-image: url("../images/hires/home_bg_2.png"), url("../images/lowres/home_bg_2.png");
     background-repeat: no-repeat;
@@ -135,10 +135,10 @@
 
 .recent-section .img-holder {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     right: 8%;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-image: url(../images/lowres/archive.png);
     background-position: center center;
     background-size: cover;
