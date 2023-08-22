@@ -73,7 +73,7 @@
 }
 
 .navbar-links li {
-    padding: 1rem;
+    padding: 0.5rem;
     list-style: none;
 }
 
@@ -181,7 +181,7 @@
 
     .navbar-links .blog {
         position: absolute;
-        bottom: 15%;
+        bottom: 10%;
         right: 10%;
         color: #00BF35;
     }
@@ -230,7 +230,15 @@
         letter-spacing: -0.04rem;
         font-weight: 175;
     }
+    .recent-section h1 {
+        font-size : 32px;
+        letter-spacing: -0.48px;
+    }
     
+    .recent-section h2 {
+        font-size: 32px;
+        letter-spacing: -0.48px;
+    }
     .recent-section .img-holder {
         left: center;
         bottom: 0;
@@ -250,8 +258,9 @@
         font-size: 28px;
     }
     .recent-section .img-holder {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
+        bottom: 10%;
     }
 }
 
