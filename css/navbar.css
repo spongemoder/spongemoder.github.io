@@ -77,3 +77,10 @@
     background-repeat: no-repeat;
 }
 
+.navbar-links li .archive-link:hover {
+    background-image: url("../resources/stroke1.svg");
+    background-clip: padding-box;
+    background-size: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
