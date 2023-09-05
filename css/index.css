@@ -16,7 +16,7 @@
 .banner-section {
     position: relative;
     height: 50vh;
-    background-image: url("../images/hires/home_bg_0.png"), url("../images/lowres/home_bg_0.png");
+    background-image: url("../images/hires/home_bg_0.jpg"), url("../images/lowres/home_bg_0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 100%;
@@ -57,7 +57,7 @@
     height: 50vh;
     width: 60vw;
     position: absolute;
-    background-image: url("../images/hires/home_bg_1.png"), url("../images/lowres/home_bg_1.png");
+    background-image: url("../images/hires/home_bg_1.jpg"), url("../images/lowres/home_bg_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -101,7 +101,7 @@
     left: 60%;
     width: 40%;
     position: absolute;
-    background-image: url("../images/hires/home_bg_2.png"), url("../images/lowres/home_bg_2.png");
+    background-image: url("../images/hires/home_bg_2.jpg"), url("../images/lowres/home_bg_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0px 20%;
@@ -139,7 +139,7 @@
     right: 8%;
     width: 250px;
     height: 250px;
-    background-image: url(../images/lowres/archive.png);
+    background-image: url(../images/lowres/archive.jpg);
     background-position: center center;
     background-size: cover;
     border-radius: 50%;
