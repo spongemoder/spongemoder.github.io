@@ -86,7 +86,7 @@
 }
 
 .navbar-links .about {
-    color: #E2FF1F;
+    color: #FFDD1D;
 }
 
 .navbar-links .blog {
@@ -162,28 +162,24 @@
         position: absolute;
         top: 10%;
         left: 10%;
-        color: #3535FF;
     }
 
     .navbar-links .archive {
         position: absolute;
         top: 33%;
         left: 25%;
-        color: #E9004F;
     }
 
     .navbar-links .about {
         position: absolute;
         top: 50%;
         right: 25%;
-        color: #E2FF1F;
     }
 
     .navbar-links .blog {
         position: absolute;
         bottom: 10%;
         right: 10%;
-        color: #00BF35;
     }
 
 }
