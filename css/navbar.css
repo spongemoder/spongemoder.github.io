@@ -1,13 +1,7 @@
 @font-face {
-    font-family: 'Terminal Grotesque Open';
+    font-family: 'Acumin Variable Concept';
     font-weight: 1 1000;
-    src: url("../fonts/terminal-grotesque_open.otf");
-}
-
-@font-face {
-    font-family: 'Terminal Grotesque';
-    font-weight: 1 1000;
-    src: url("../fonts/terminal-grotesque.ttf");
+    src: url('../fonts/Acumin-Variable-Concept.ttf')
 }
 
 *{
@@ -16,31 +10,47 @@
     box-sizing: border-box;
 }
 
-.title {
-    font-size: 1.5rem;
-    background-image: url("../resources/dogdrawing.svg");
-    background-size: 50%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin: 5px;
-    padding: 15px;
+.navbar img{
+    max-width: 50px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
-    font-family: 'Terminal Grotesque Open';
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000000;
+    font-family : Acumin Variable Concept;
+    font-weight: 550;
+    font-size : 30px;
+    letter-spacing : -0.61px;
+    color: #FFFFFF;
+
+    width: 500px;
+    height: 48px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 25px;
+}
+.navbar-links .art-link {
+    color: #3535FF;
 }
 
-.navbar a {
+.navbar-links .archive-link {
     text-decoration: none;
-    color: #ffffff;
+    color: #E9004F;
+}
+
+.navbar-links .about-link {
+    text-decoration: none;
+    color: #FFDD1D;
+}
+
+.navbar-links .blog-link {
+    text-decoration: none;
+    color: #00BF35;
 }
 
 .navbar-links ul {
-    display: flex;
+    position: absolute;
+    top: 5px;
+    display: flex; 
 }
 
 .navbar-links li {
@@ -49,38 +59,9 @@
 
 .navbar-links li a{
     text-decoration: none;
-    color: #ffffff;
     padding: 1rem;
 }
 
-.navbar-links li .blog-link:hover {
-    background-image: url("../resources/stroke1.svg");
-    background-clip: padding-box;
-    background-size: 2rem;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.navbar-links li .art-link:hover {
-    background-image: url("../resources/stroke2.svg");
-    background-clip: padding-box;
-    background-size: 2rem;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.navbar-links li .about-link:hover {
-    background-image: url("../resources/stroke3.svg");
-    background-clip: padding-box;
-    background-size: 3rem;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.navbar-links li .archive-link:hover {
-    background-image: url("../resources/stroke1.svg");
-    background-clip: padding-box;
-    background-size: 2rem;
-    background-position: center center;
-    background-repeat: no-repeat;
+.navbar-links li a:hover {
+    color: #000000;
 }

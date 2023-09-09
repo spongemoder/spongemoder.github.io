@@ -60,9 +60,9 @@ body {
     }
 }
 
-img {
+.img-holder img {
     position: absolute;
-    bottom: 50px;
+    top: 200px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
