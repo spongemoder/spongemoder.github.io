@@ -4,6 +4,7 @@
     src: url('../fonts/Acumin-Variable-Concept.ttf')
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -11,39 +12,70 @@
 }
 
 body {
-    background-color: rgb(0,0,0);
-    background-image: url("../images/hires/about_bg.jpg"), url("../images/lowres/about_bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #FFFFFF;
     overflow-x: hidden;
 }
 
-.about {
-    padding-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+.banner-section {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/hires/about_header.jpg"), url("../images/lowres/about_header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
-body h1{
+.banner-text {
+    position: absolute;
+    bottom: -70px;
+    left: 100px;
     font-family : 'Acumin Variable Concept';
-    font-weight: 150;
-    font-size: 8rem;
-    letter-spacing : -1rem;
+    font-weight: 250;
+    font-size: 12rem;
+    letter-spacing : -1.6rem;
     color: #FFFFFF;
-    margin: 0;
-    transform: translateX(10vw) scaleX(1.2);
+    transform: scaleX(1.5);
 }
 
+h1 {
+    position: absolute;
+    left: 55px;
+    top: 350px;
+    font-family : 'Acumin Variable Concept';
+    font-weight: 100;
+    font-size: 4rem;
+    letter-spacing : -0.4rem; 
+    transform: scaleX(1.1);
+    color: #000000;
 
-body p {
-    font-weight: 150;
-    font-family : Acumin Variable Concept;
-    font-size : 32px;
-    line-height : 30px;
-    letter-spacing : -2.45px;
-    color : #FFFFFF;
-    margin: 10px;
-    padding-top: 10px;
 }
 
+h2 {
+    position: absolute;
+    left: 135px;
+    top: 450px;
+    width: 1000px;
+    font-family : 'Acumin Variable Concept';
+    font-weight: 250;
+    font-size: 2rem;
+    letter-spacing : -0.15rem; 
+    transform: scaleX(1.2);
+    color: #000000;
 
+}
+p {
+    position: relative;
+    top: 350px;
+    left: 170px;
+    width: 1500px;
+    padding: 10px;
+    padding-top: 20px;
+    font-family : 'Acumin Variable Concept';
+    font-weight: 350;
+    font-size: 2rem;
+    letter-spacing : 0rem; 
+    transform: scaleX(1.2);
+    color: #000000;
+
+}

@@ -17,6 +17,7 @@
 }
 
 .navbar {
+    position: fixed;
     font-family : Acumin Variable Concept;
     font-weight: 550;
     font-size : 30px;
@@ -27,6 +28,7 @@
     height: 48px;
     background-color: #ffffff;
     border-bottom-right-radius: 25px;
+    z-index: 100;
 }
 .navbar-links .art-link {
     color: #3535FF;
