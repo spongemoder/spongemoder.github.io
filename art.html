@@ -1,12 +1,13 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/art.css">
+        <link rel="stylesheet", href="css/art.css">
         <link rel="icon" type="image/png" href="favicon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>art - dogs chasing cars</title>
     </head>
+
     <body>
         <nav class="navbar">
             <div class="navbar-links">
@@ -21,56 +22,8 @@
                 </ul>
             </div>
         </nav>
-
-        <h1> getting personal </h1>
-        <div class="gallery">
-            <img src="portfolio/lowres/getting-personal/dramaticamount.png" onclick="fullView('getting-personal/dramaticamount.png')"/>
-            <img src="portfolio/lowres/getting-personal/catears.png" onclick="fullView('getting-personal/catears.png')"/>
-            <img src="portfolio/lowres/getting-personal/ipray.png" onclick="fullView('getting-personal/ipray.png')"/>
+        <div class="banner-section">
+            <div class="banner-text">showcase</div>
         </div>
-        
-        <h1> mock ups </h1>
-        <div class="gallery">
-            <img src="portfolio/lowres/mock-ups/dwad.png" onclick="fullView('mock-ups/dwad.png')"/>
-            <img src="portfolio/lowres/mock-ups/f1.png" onclick="fullView('mock-ups/f1.png')"/>
-            <img src="portfolio/lowres/mock-ups/mf18.png" onclick="fullView('mock-ups/mf18.png')"/>
-            <img src="portfolio/lowres/mock-ups/mgs25th_0.png" onclick="fullView('mock-ups/mgs25th_0.png')"/>
-            <img src="portfolio/lowres/mock-ups/mgs25th_1.png" onclick="fullView('mock-ups/mgs25th_1.png')"/>
-            <img src="portfolio/lowres/mock-ups/mhtr_0.png" onclick="fullView('mock-ups/mhtr_0.png')"/>
-            <img src="portfolio/lowres/mock-ups/website.png" onclick="fullView('mock-ups/website.png')"/>
-            <img src="portfolio/lowres/mock-ups/wrcposter.png" onclick="fullView('mock-ups/wrcposter.png')"/>
-        </div>
-        
-        <h1> close to home </h1>
-        <div class="gallery">
-            <img src="portfolio/lowres/close-to-home/aerial-albumn-cover.png" onclick="fullView('close-to-home/aerial-albumn-cover.png')"/>
-            <img src="portfolio/lowres/close-to-home/aerial.png" onclick="fullView('close-to-home/aerial.png')"/>
-            <img src="portfolio/lowres/close-to-home/aerialcover.png" onclick="fullView('close-to-home/aerialcover.png')"/>
-            <img src="portfolio/lowres/close-to-home/aerialfish.png" onclick="fullView('close-to-home/aerialfish.png')"/>
-            <img src="portfolio/lowres/close-to-home/machinadesigns_0.png" onclick="fullView('close-to-home/machinadesigns_0.png')"/>
-            <img src="portfolio/lowres/close-to-home/machinadesigns_1.png" onclick="fullView('close-to-home/machinadesigns_1.png')"/>
-            <img src="portfolio/lowres/close-to-home/machinadesigns_2.png" onclick="fullView('close-to-home/machinadesigns_2.png')"/>
-            <img src="portfolio/lowres/close-to-home/machinadesigns_3.png" onclick="fullView('close-to-home/machinadesigns_3.png')"/>
-            <img src="portfolio/lowres/close-to-home/nullux.png" onclick="fullView('close-to-home/nullux.png')"/>
-            <img src="portfolio/lowres/close-to-home/tandemmorelogos.png" onclick="fullView('close-to-home/tandemmorelogos.png')"/>
-            <img src="portfolio/lowres/close-to-home/tandemsoftware.png" onclick="fullView('close-to-home/tandemsoftware.png')"/>
-            <img src="portfolio/lowres/close-to-home/treklogodesign.png" onclick="fullView('close-to-home/treklogodesign.png')"/>
-        </div>
-
-        <div id="fullviewimage">
-            <span id="closebutton" onclick="closeButton()">&times;</span>
-            <img id="fullimage">
-        </div>
-
-
     </body>
-        <script type="text/javascript">
-            function fullView(imgLink) {
-                document.getElementById("fullimage").src = "portfolio/hires/" + imgLink;
-                document.getElementById("fullviewimage").style.display = "block";
-            }
-            function closeButton() {
-                document.getElementById("fullviewimage").style.display = "none";
-            }
-        </script>
 </html>
