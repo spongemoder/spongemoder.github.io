@@ -19,7 +19,7 @@ body {
 .banner-section {
     position: absolute;
     width: 100%;
-    height: 300px;
+    height: 33vh;
     background-image: url("../images/hires/archive_header.jpg"), url("../images/lowres/archive_header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,15 +52,61 @@ h1 {
 }
 
 h2 {
-    position: absolute;
-    left: 135px;
-    top: 450px;
-    width: 1000px;
+    position: relative;
+    top: 400px;
+    left: 25px;
+    padding: 10px;
+    padding-top: 20px;
     font-family : 'Acumin Variable Concept';
-    font-weight: 250;
+    font-weight: 350;
     font-size: 2rem;
-    letter-spacing : -0.15rem; 
-    transform: scaleX(1.2);
+    letter-spacing : 0rem; 
     color: #000000;
+
+}
+
+@media (max-width: 938px) {
+    .banner-text {
+        position: absolute;
+        bottom: -37px;
+        left: 60px;
+        font-family : 'Acumin Variable Concept';
+        font-weight: 250;
+        font-size: 12rem;
+        letter-spacing : -0.9rem;
+        transform: scaleX(1.5);
+        font-size: 6rem;
+    }
+    h1 {
+        left: 30px;
+        top: 300px;
+        font-family : 'Acumin Variable Concept';
+        font-weight: 100;
+        font-size: 4rem;
+        letter-spacing : -0.4rem; 
+        transform: scaleX(1.1);
+        color: #000000;
+    }
+    
+    h2 {
+        top: 350px;
+        left: 5px;
+        max-width: 500px;
+        font-size: 1rem;
+        letter-spacing : 0rem; 
+        color: #000000;
+    }
+} 
+
+
+@media (max-width: 460px) {
+    h1 {
+        left: 30px;
+        top: 300px;
+        font-size: 3rem;
+        letter-spacing : -0.3rem; 
+        transform: scaleX(1.1);
+        color: #000000;
+    }
 
 }
