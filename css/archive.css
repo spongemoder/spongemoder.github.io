@@ -41,7 +41,7 @@ body {
 h1 {
     position: absolute;
     left: 55px;
-    top: 350px;
+    top: 36vh;
     font-family : 'Acumin Variable Concept';
     font-weight: 100;
     font-size: 4rem;
@@ -53,7 +53,7 @@ h1 {
 
 h2 {
     position: relative;
-    top: 400px;
+    top: 40vh;
     left: 25px;
     padding: 10px;
     padding-top: 20px;
@@ -89,7 +89,7 @@ h2 {
     }
     
     h2 {
-        top: 45vh;
+        top: 40vh;
         left: 5px;
         max-width: 500px;
         font-size: 1rem;
