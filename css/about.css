@@ -39,13 +39,14 @@ body {
 }
 
 p {
+    max-width: 1200px;
     position: relative;
     top: 36vh;
     left: 0px;
     padding: 10px;
     padding-top: 20px;
     font-family : 'Acumin Variable Concept';
-    font-weight: 350;
+    font-weight: 250;
     font-size: 2rem;
     letter-spacing : 0rem; 
     color: #000000;
