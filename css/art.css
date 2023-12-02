@@ -55,6 +55,29 @@ h1 {
     padding-right: 20px;
 }
 
+.gallery {
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery .item {
+    flex: 1;
+    flex-basis: calc((100% - 4rem)/5);
+    max-width: 400px;
+    margin: 30px;
+}
+
+.gallery .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
 @media (max-width: 938px) {
     .banner-text {
         position: absolute;
@@ -66,6 +89,17 @@ h1 {
         letter-spacing : -0.9rem;
         transform: scaleX(1.5);
         font-size: 6rem;
+    }
+   
+    .gallery {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .gallery .item {
+        max-width: 250px;
+        flex-basis: calc((100% - 3rem)/4);
+        margin: 10px;
     }
 } 
 
@@ -80,4 +114,22 @@ h1 {
         transform: scaleX(1.5);
         font-size: 4rem;
     }
+    
+    .gallery {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .gallery .item {
+        max-width: 250px;
+        flex-basis: calc((100% - 2rem)/3);
+        margin: 10px;
+    }
 } 
+
+@media (max-width: 400px) {
+    .gallery .item {
+        max-width: 150px;
+    }
+
+}
