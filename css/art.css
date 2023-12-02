@@ -56,11 +56,11 @@ h1 {
 }
 
 .gallery {
-    padding-left: 150px;
-    padding-right: 150px;
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     width: 100%;
 }
@@ -76,8 +76,69 @@ h1 {
     width: 100%;
     height: 100%;
     border-radius: 100%;
+    cursor: pointer;
+    transition: border-radius 0.2s cubic-bezier(0,1.07,.21,.96);
 }
 
+.gallery .item img:hover {
+    border-radius: 5%;
+}
+
+.modal {
+    z-index: 10;
+    position: fixed;
+    overflow: hidden;
+    font-family: "Acumin Variable Concept";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.50);
+}
+.modal .img-holder {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6em 0;
+}
+
+.modal .img img {
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+}
+
+.modal-item {
+    padding: 20px;
+    color: white;
+}
+
+.modal-item h2 {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing : -1.6px;
+    color: #FFFFFF;    
+}
+
+.close-btn p {
+    cursor: pointer;
+}
+
+@media (orientation: portrait){
+    .modal .img-holder {
+        padding: 0 0 0 0;
+        left: 50%;
+        top: 50%;
+        align-items: center;
+        flex-direction: column;
+        transform: translate(-50%, -50%);
+    }
+
+}
 @media (max-width: 938px) {
     .banner-text {
         position: absolute;
@@ -100,6 +161,19 @@ h1 {
         max-width: 250px;
         flex-basis: calc((100% - 3rem)/4);
         margin: 10px;
+    }
+
+    .modal {
+        max-height: 100%;
+    }
+    .modal .img img {
+        width: 300px;
+    }
+    .modal-item h2 {
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing : -1.6px;
+        color: #FFFFFF;    
     }
 } 
 
