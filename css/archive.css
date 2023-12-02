@@ -51,6 +51,7 @@ h1 {
 }
 
 h2 {
+    max-width: 1200px;
     position: relative;
     padding: 10px;
     padding-top: 20px;
