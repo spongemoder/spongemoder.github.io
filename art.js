@@ -16,11 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
             let pathname = url.pathname;
             let dirs = pathname.split('/');
             let fullImgSrc = "./portfolio/full/" + dirs.slice(-2).join('/');
+            let smallImgSrc = "./portfolio/full/small/" + dirs.slice(-2).join('/');
             
-            console.log(fullImgSrc);
             let fullImg = imgViewContainer.querySelector("img");
             fullImg.src = fullImgSrc;
-            
+
             modal.style.clipPath = "";
             console.log(modal.style)
         });
